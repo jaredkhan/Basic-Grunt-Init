@@ -1,6 +1,12 @@
 # basic-grunt-init
 
-> Create a basic Grunt setup with 
+Create a basic Grunt setup with src and dist folders. Setup for using Sass, JS, and HTML.
+
+- liveReload
+- Sass
+- imagemin
+- uglify
+- Source maps (both sass and js)
 
 [grunt-init]: http://gruntjs.com/project-scaffolding
 
