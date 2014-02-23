@@ -11,7 +11,7 @@ exports.template = function(grunt, init, done) {
     
     var devDependencies = {
       "grunt": "~0.4.1",
-      "grunt-contrib-sass": "~0.5.0",
+      "grunt-sass": "~0.11.0",
       "grunt-contrib-watch": "~0.5.3",
       "grunt-contrib-imagemin": "~0.4.0",
       "grunt-contrib-uglify": "~0.3.2",
