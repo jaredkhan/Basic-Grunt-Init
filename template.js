@@ -6,6 +6,10 @@ exports.warnOn = '*';
 exports.template = function(grunt, init, done) {
   init.process({}, [], function(err, props) {
     
+    grunt.file.mkdir('src/css');
+    grunt.file.mkdir('src/images');
+    grunt.file.mkdir('src/scripts');
+
     var files = init.filesToCopy(props);
     init.copyAndProcess(files, props);
     
