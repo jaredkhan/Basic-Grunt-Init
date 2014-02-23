@@ -1,12 +1,12 @@
-# basic-grunt-init
+# Rapid
 
-Create a basic Grunt setup with src and dist folders. Setup for using Sass, JS, and HTML.
+Grunt-init template to get up and running for rapid prototyping websites. Create a basic Grunt setup with src and dist folders. Setup for using Sass, JS, and HTML.
 
 - liveReload
 - Sass
 - imagemin
 - uglify
-- Source maps (both sass and js)
+- Source maps (js only due to using libsass)
 
 [grunt-init]: http://gruntjs.com/project-scaffolding
 
@@ -26,7 +26,7 @@ _(Windows users, see [the documentation][grunt-init] for the correct destination
 At the command-line, cd into an empty directory, run this command.
 
 ```
-grunt-init basic
+grunt-init rapid
 ```
 
 _Note that this template will generate files in the current directory, so be sure to change to a new directory first if you don't want to overwrite existing files._
