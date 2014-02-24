@@ -16,6 +16,15 @@ module.exports  = function(grunt){
         },
        }
     },
+    autoprefixer: {
+      dist:{
+        expand: true,
+        src: 'dist/css/**/*.css',
+      },
+      options: {
+        browsers: ['last 2 versions', 'ie 8', 'ie 9'],
+      },
+    },
     imagemin: {
       dist: {
         files: [{
@@ -81,5 +90,6 @@ module.exports  = function(grunt){
   grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-htmlmin');
+  grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.registerTask('default', ['watch']);
 }

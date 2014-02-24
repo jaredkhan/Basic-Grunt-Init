@@ -9,6 +9,9 @@ exports.template = function(grunt, init, done) {
     grunt.file.mkdir('src/css');
     grunt.file.mkdir('src/images');
     grunt.file.mkdir('src/scripts');
+    grunt.file.mkdir('dist/css');
+    grunt.file.mkdir('dist/images');
+    grunt.file.mkdir('dist/scripts');
 
     var files = init.filesToCopy(props);
     init.copyAndProcess(files, props);
@@ -19,7 +22,8 @@ exports.template = function(grunt, init, done) {
       "grunt-contrib-watch": "~0.5.3",
       "grunt-contrib-imagemin": "~0.4.0",
       "grunt-contrib-uglify": "~0.3.2",
-      "grunt-contrib-htmlmin": "~0.2.0"
+      "grunt-contrib-htmlmin": "~0.2.0",
+      "grunt-autoprefixer": "~0.7.1",
     };
     // Generate package.json file
     init.writePackageJSON('package.json', {
